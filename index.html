@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/tabzy.css" />
+  </head>
+  <body>
+    <!-- Container -->
+    <ul id="tabs">
+      <!-- Tabs -->
+      <li id="#tab1"><a href="#tab1">Tab1</a></li>
+      <li id="#tab2"><a href="#tab2">Tab2</a></li>
+      <li id="#tab3"><a href="#tab3">Tab3</a></li>
+      <li id="#tab4"><a href="#tab4">Tab4</a></li>
+      <li id="#tab5"><a href="#tab5">Tab5</a></li>
+    </ul>
+
+    <!-- Panels -->
+    <div id="tab1">Tab1 content</div>
+    <div id="tab2">Tab2 content</div>
+    <div id="tab3">Tab3 content</div>
+    <div id="tab4">Tab4 content</div>
+    <div id="tab5">Tab5 content</div>
+
+    <!-- Container -->
+
+    <ul id="tabs2">
+      <!-- Tabs -->
+      <li id="#tab1"><a href="#tabA">TabA</a></li>
+      <li id="#tab2"><a href="#tabB">TabB</a></li>
+      <li id="#tab3"><a href="#tabC">TabC</a></li>
+      <li id="#tab4"><a href="#tabD">TabD</a></li>
+      <li id="#tab5"><a href="#tabE">TabE</a></li>
+    </ul>
+
+    <!-- Panels -->
+    <div id="tabA">TabA content</div>
+    <div id="tabB">TabB content</div>
+    <div id="tabC">TabC content</div>
+    <div id="tabD">TabD content</div>
+    <div id="tabE">TabE content</div>
+
+    <script src="./src/tabzy.js"></script>
+    <script>
+      //   Tabzy
+
+      const tabs = new Tabzy("#tabs", {
+        remember: true,
+      });
+      const tabs2 = new Tabzy("#tabs2", {
+        remember: true,
+      });
+
+      //tabs.switch(id) ==> active sang tab co id
+      //tabs.destroy() ==> quay tro lai ban dau va hien tat ca
+    </script>
+  </body>
+</html>
